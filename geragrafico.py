@@ -9,7 +9,6 @@ def main():
     print(valores)
     plt.ylabel('Valores de entrada')
     plt.xlabel('Amostragem')
-    plt.title('Gráfico de linhas')
     #Plotando gráfico de linhas
     plt.subplot(1, 2, 1)
 
@@ -32,6 +31,9 @@ def main():
     plt.xticks(xvalues, ['Série ' + str(x) for x in xvalues])
     plt.title('Médias das séries')
 
+    plt.ylabel('Valores de entrada')
+    plt.xlabel('Amostragem')
+
     plt.show()
-    
+
 main()
